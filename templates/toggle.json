@@ -1,0 +1,29 @@
+{
+    "namespace": "namespace",
+    "toggle@common.toggle": {
+      "$toggle_collection_detail_name": "$toggle_view_binding_name",
+      "$unchecked_locked_control|default": "toggle_unchecked",
+      "$unchecked_locked_hover_control|default": "toggle_unchecked",
+      "$checked_locked_control|default": "toggle_checked",
+      "$checked_locked_hover_control|default": "toggle_checked",
+      "$unchecked_control|default": "toggle_unchecked",
+      "$checked_control|default": "toggle_checked",
+      "$unchecked_hover_control|default": "toggle_unchecked_hover",
+      "$checked_hover_control|default": "toggle_checked_hover"
+    },
+    "content": {
+      "type": "image"
+    },
+    "toggle_unchecked@content": {
+      "texture": "textures/ui/toggle_on"
+    },
+    "toggle_checked@content": {
+      "texture": "textures/ui/toggle_off"
+    },
+    "toggle_unchecked_hover@content": {
+      "texture": "textures/ui/toggle_on_hover"
+    },
+    "toggle_checked_hover@content": {
+      "texture": "textures/ui/toggle_off_hover"
+    }
+  }

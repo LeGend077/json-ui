@@ -1,0 +1,6 @@
+{
+    "content_button@common_buttons.light_content_button": { 
+        "$pressed_button_name":"any",
+        "$button_content":"foo.bar"
+      }
+}

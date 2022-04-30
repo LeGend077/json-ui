@@ -1,0 +1,7 @@
+{
+    "image": {
+      "type":"image",
+      "texture":"path/to/texture",
+      "size":["100%","100%"]
+    }
+}

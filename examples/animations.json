@@ -1,0 +1,60 @@
+{
+    // flipbook
+    "bar_animation": {
+        "anim_type": "flip_book",
+        "initial_uv": [ 0, 0 ],
+        "frame_count": 10,
+        "frame_step": 64,
+        "fps": 10,
+        "reversible": true,
+        "easing": "linear"
+      },
+      // size
+      "screen_entrance_size_animation_immediate": {
+        "anim_type": "size",
+        "easing": "out_back",
+        "duration": "$transition_time_push_size",
+        "from": [ 0, 0 ],
+        "to": [ "100%", "100%" ],
+        "resettable": false
+      },
+      // alpha
+      "anim_item_details_alpha": {
+        "anim_type": "alpha",
+        "easing": "in_quint",
+        "destroy_at_end": "selected_item_details",
+        "duration": 2,
+        "from": 1.0,
+        "to": 0
+      },
+      // offset
+    "screen_exit_animation_push_offset": {
+        "anim_type": "offset",
+        "easing": "out_cubic",
+        "duration": "$transition_time_push",
+        "from": [ 0, 0 ],
+        "to": [ "-25%", 0 ]
+    },
+    // wait
+    "loading_bar_wait_animation": {
+        "anim_type": "wait",
+        "duration": "$loading_bar_transition",
+        "next": "@next.animation"
+    },
+
+    // Search of UV and Color is still on..............
+
+    // all screen animations
+    "animations": {
+        "anims":[
+            "@common.container_screen_exit_animation_push",
+            "@common.container_screen_exit_animation_pop",
+            "@common.container_screen_entrance_animation_push",
+            "@common.container_screen_entrance_animation_pop",
+            "@common.screen_exit_animation_push_fade",
+            "@common.screen_exit_animation_pop_fade",
+            "@common.screen_entrance_animation_push_fade",
+            "@common.screen_entrance_animation_pop_fade"
+        ]
+    }
+}

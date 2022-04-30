@@ -1,0 +1,110 @@
+{
+    "button": {
+        "type": "button",
+    
+        "$focus_id|default": "",
+        "$focus_override_down|default": "",
+        "$focus_override_up|default": "",
+        "$focus_override_left|default": "",
+        "$focus_override_right|default": "",
+        "focus_identifier": "$focus_id",
+        "focus_change_down": "$focus_override_down",
+        "focus_change_up": "$focus_override_up",
+        "focus_change_left": "$focus_override_left",
+        "focus_change_right": "$focus_override_right",
+        "$focus_enabled|default": true,
+        "focus_enabled": "$focus_enabled",
+        "focus_magnet_enabled": true,
+        "$focus_wrap_enabled|default": true,
+        "focus_wrap_enabled": "$focus_wrap_enabled",
+    
+        "$button_focus_precedence|default": 0,
+        "default_focus_precedence": "$button_focus_precedence",
+    
+        "$button_tts_name|default": "accessibility.button.tts.title",
+        "$button_tts_header|default": "",
+        "$tts_section_header|default": "",
+        "$button_tts_control_type_order_priority|default": 100,
+        "$button_tts_index_priority|default": 150,
+    
+        "tts_name": "$button_tts_name",
+        "tts_control_header": "$button_tts_header",
+        "tts_section_header": "$tts_section_header",
+        "tts_control_type_order_priority": "$button_tts_control_type_order_priority",
+        "tts_index_priority": "$button_tts_index_priority",
+    
+        "layer": 1,
+        "sound_name": "random.click",
+        "sound_volume": 1.0,
+        "sound_pitch": 1.0,
+        "locked_control": "",
+        "default_control": "default",
+        "hover_control": "hover",
+        "pressed_control": "pressed",
+        "controls":[
+            {   
+                "default@image":{
+                    "texture":"textures/gui/newgui/buttons/borderless/light"
+                }
+            },
+            {   
+                "hover@image":{
+                    "texture":"textures/gui/newgui/buttons/borderless/lighthover"
+                }
+            },
+            {   
+                "pressed@image":{
+                    "texture":"textures/gui/newgui/buttons/borderless/lightpressed"
+                }
+            }
+        ],
+        "button_mappings": [
+          {
+            "from_button_id": "button.menu_select",
+            "to_button_id": "$pressed_button_name",
+            "mapping_type": "pressed"
+          },
+          {
+            "from_button_id": "button.menu_ok",
+            "to_button_id": "$pressed_button_name",
+            "mapping_type": "focused"
+          }
+        ],
+    
+        "$button_bindings|default": [],
+        "bindings": "$button_bindings"
+      },
+    
+      "screen_header_title_panel": {
+        "type": "panel",
+        "size": [ "fill", 17 ],
+        "$screen_header_title_visible|default": true,
+        "controls": [
+          {
+            "store_header_title": {
+              "type": "label",
+              "size": [ "100%", 17 ],
+              "offset": [ 0, 3.5 ],
+              "ignored": "(not $screen_header_title_visible)",
+              "anchor_from": "left_middle",
+              "anchor_to": "left_middle",
+              "text_alignment": "left",
+              "color": "$title_text_color",
+              "$screen_header_title|default": "#screen_header_title",
+              "$screen_header_title_binding_type|default": "none",
+              "text": "$screen_header_title",
+              "bindings": [
+                {
+                  "binding_type": "$screen_header_title_binding_type",
+                  "binding_name": "$screen_header_title",
+                  "binding_name_override": "$screen_header_title"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "image": {
+        "type":"image"
+      }
+}

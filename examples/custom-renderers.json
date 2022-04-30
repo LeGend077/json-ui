@@ -1,0 +1,8 @@
+{
+    "custom":{
+        "type":"custom",
+        "renderer":"live_player_renderer",
+        "layer": 1
+        // accepts [ flying_item_renderer, inventory_item_renderer, credits_renderer, vignette_renderer, vignette_renderer, paper_doll_renderer, debug_screen_renderer, debug_screen_renderer, gradient_renderer, live_horse_renderer, live_player_renderer, hud_player_renderer, hud_player_renderer, hud_player_renderer, heart_renderer, horse_heart_renderer, horse_heart_renderer, horse_jump_renderer, hunger_renderer, bubbles_renderer, mob_effects_renderer, mob_effects_renderer, mob_effects_renderer, camera_renderer, web_view_renderer, banner_pattern_renderer, actor_portrait_renderer, actor_portrait_renderer, progress_bar_renderer, 3d_structure_renderer, splash_text_renderer, hover_text_renderer, ui_holo_cursor, ui_holo_cursor ]
+    }
+}
