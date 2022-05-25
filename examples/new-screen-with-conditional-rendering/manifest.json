@@ -1,0 +1,29 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "New Screen Toggleable on Start Screen",
+        "name": "New Screen by LeGend077",
+        "uuid": "2fba0d80-4d93-4b97-93c7-afe16754a45b",
+        "min_engine_version": [
+            1,
+            16,
+            0
+        ],
+        "version": [
+            1,
+            0,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "2eeb1365-3c53-464e-85aa-56f8f1e35d26",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}
