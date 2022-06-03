@@ -20,7 +20,7 @@
     "$toggle_binding_type|default": "none"
   },
 
-  "checkbox_button": {
+  "checkbox_button": {  // Derive checkbox_button for usage
     "type": "panel",
     "layer": 3,
     "$toggle_view_binding_name|default": "this_toggle",
