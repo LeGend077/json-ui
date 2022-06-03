@@ -1,0 +1,34 @@
+{
+  "checkbox_template@common_toggles.light_template_toggle": {
+    "$unchecked_control|default": "common_toggles.toggle_checkbox_unchecked",
+    "$checked_control|default": "common_toggles.toggle_checkbox_checked",
+    "$unchecked_hover_control|default": "common_toggles.toggle_checkbox_unchecked_hover",
+    "$checked_hover_control|default": "common_toggles.toggle_checkbox_checked_hover",
+    "$unchecked_locked_control|default": "common_toggles.toggle_checkbox_unchecked_locked",
+    "$unchecked_locked_hover_control|default": "common_toggles.toggle_checkbox_unchecked_locked",
+    "$checked_locked_control|default": "common_toggles.toggle_checkbox_checked_locked",
+    "$checked_locked_hover_control|default": "common_toggles.toggle_checkbox_checked_locked",
+
+    "$default_texture|default": "textures/ui/button_borderless_light",
+    "$hover_texture|default": "textures/ui/button_borderless_light",
+    "$pressed_texture|default": "textures/ui/button_borderless_light",
+    "$pressed_no_hover_texture|default": "textures/ui/button_borderless_light",
+    "$locked_texture|default": "textures/ui/disabledButtonNoBorder",
+    "$unchecked_locked_texture|default": "textures/ui/disabledButtonNoBorder",
+    "$checked_locked_texture|default": "textures/ui/disabledButtonNoBorder",
+
+    "$toggle_binding_type|default": "none"
+  },
+
+  "checkbox_button": {
+    "type": "panel",
+    "layer": 3,
+    "$toggle_view_binding_name|default": "this_toggle",
+    "$template_toggle|default": "start.checkbox_template",
+    "controls": [
+      {
+        "$toggle_view_binding_name@$template_toggle": {}
+      }
+    ]
+  }
+}
